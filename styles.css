@@ -2,7 +2,32 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #5f5454;
+}
+.start {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    font-size: x-large;
+    border-radius: 30px;
+    height: 150px;
+    max-width: 150px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+}
+
+header, nav, section, article, footer {
+    width: 100%;
 }
 
 header {
@@ -25,14 +50,37 @@ nav a {
     margin: 0 15px;
 }
 
-section {
+main {
+    flex: 1; /* Make the main section flexible to take up remaining space */
     padding: 20px;
 }
 
 article {
     margin-bottom: 20px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    margin-left: 20px;
 }
-
+.news {
+    background-color: #1b0b42;
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    display: flex;
+    margin-left: 20px;
+}
+.article1{
+    background-color: #7e1515;
+}
+.article2{
+    background-color: #43c2b1;
+}
 footer {
     background-color: #333;
     color: #fff;
@@ -40,13 +88,48 @@ footer {
     padding: 1em;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
 }
-
+h2 {
+    margin-left: 20px;
+    color: #fff;
+}
+p
+{
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    display: flex;
+    margin-left: 20px;
+    color: #fff;
+}
+.newsbg {
+    background-color: #181818;
+    color: #fff;
+    padding: 20px;
+    max-width: 1000px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
 /* Responsive styles */
 @media only screen and (max-width: 600px) {
     nav a {
         display: block;
         margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    main, article {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    footer {
+        position: static;
     }
 }
